@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity_membership_change_with_buttons">
+
+    <ImageView
+        android:id="@+id/homeIndicator"
+        android:layout_width="140dp"
+        android:layout_height="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.990"
+        app:srcCompat="@drawable/home_indicator" />
+
+    <ImageView
+        android:id="@+id/upgradeMember"
+        android:layout_width="413dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/upgrade_member_bar" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="360dp"
+        android:layout_height="69dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:backgroundTint="@color/bluestatus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <Button
+        android:id="@+id/goldMember"
+        android:layout_width="360dp"
+        android:layout_height="168dp"
+        android:gravity="start|center"
+        android:text="Gold\n\n\nAccess to Unlimited predictions per Month\n\n\nRp 200.000,-/Month"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/goldmember"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upgradeMember"
+        app:layout_constraintVertical_bias="0.025"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <Switch
+        android:id="@+id/goldMemberStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        app:layout_constraintBottom_toBottomOf="@+id/goldMember"
+        app:layout_constraintEnd_toEndOf="@+id/goldMember"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="@+id/goldMember"
+        app:layout_constraintTop_toTopOf="@+id/goldMember"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <Button
+        android:id="@+id/silverMember"
+        android:layout_width="360dp"
+        android:layout_height="168dp"
+        android:gravity="start|center"
+        android:text="Silver (Recommended)\n\n\nAccess to 50 predictions per Month\n\n\nRp 100.000,-/Month"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/silvermember"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goldMember"
+        app:layout_constraintVertical_bias="0.04"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <Switch
+        android:id="@+id/silverMemberStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        app:layout_constraintBottom_toBottomOf="@+id/silverMember"
+        app:layout_constraintEnd_toEndOf="@+id/silverMember"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="@+id/silverMember"
+        app:layout_constraintTop_toTopOf="@+id/silverMember"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/bronzeMember"
+        android:layout_width="360dp"
+        android:layout_height="168dp"
+        android:gravity="start|center"
+        android:text="Bronze\n\n\nAccess to 30 predictions per Month\n\n\nFree"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/bronzemember"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goldMember"
+        app:layout_constraintVertical_bias="0.639"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <Switch
+        android:id="@+id/bronzeMemberStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        app:layout_constraintBottom_toBottomOf="@+id/bronzeMember"
+        app:layout_constraintEnd_toEndOf="@+id/bronzeMember"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="@+id/bronzeMember"
+        app:layout_constraintTop_toTopOf="@+id/bronzeMember"
+        app:layout_constraintVertical_bias="0.12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
