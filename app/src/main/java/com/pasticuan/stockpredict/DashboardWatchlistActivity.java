@@ -16,6 +16,8 @@ public class DashboardWatchlistActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_watchlist);
 
+        Objects.requireNonNull(getSupportActionBar()).hide();
+
         int blue[] = { 0x487FD9 };
         GradientDrawable availability = new GradientDrawable(
                 GradientDrawable.Orientation.TOP_BOTTOM, blue);
