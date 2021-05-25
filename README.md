@@ -1,4 +1,5 @@
 # Pasti-Cuan-App
-Semester 4 Software Engineering
+4th Semester Software Engineering Project
 
-Aplikasi prediksi saham Indonesia
+Indonesian Stock Prediction Application
+Currently not usable
