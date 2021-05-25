@@ -34,7 +34,6 @@
     <ScrollView
         android:layout_width="410dp"
         android:layout_height="605dp"
-        android:layout_marginTop="1dp"
         app:layout_constraintBottom_toTopOf="@+id/homeIndicator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -51,10 +50,10 @@
                 android:id="@+id/vision"
                 android:layout_width="wrap_content"
                 android:layout_height="227dp"
-                android:src="@drawable/vision_about_us"
-                android:layout_marginBottom="10dp"
                 android:layout_centerHorizontal="true"
-                android:layout_centerVertical="false"/>
+                android:layout_centerVertical="false"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/vision_about_us" />
 
             <ImageView
                 android:id="@+id/mission"
@@ -63,8 +62,8 @@
                 android:layout_below="@id/vision"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="false"
-                android:src="@drawable/mission_about_us"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/mission_about_us" />
 
             <ImageView
                 android:id="@+id/cuan"
@@ -73,8 +72,8 @@
                 android:layout_below="@id/mission"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="false"
-                android:src="@drawable/cuan_about_us"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/cuan_about_us" />
 
             <ImageView
                 android:id="@+id/pastiCuan"
