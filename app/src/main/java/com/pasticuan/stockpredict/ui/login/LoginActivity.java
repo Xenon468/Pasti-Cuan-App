@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
 
         final EditText usernameEditText = binding.username;
         final EditText passwordEditText = binding.password;
-        final ImageView loginButton = binding.login;
+        final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
@@ -107,7 +107,7 @@ public class LoginActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 loginViewModel.loginDataChanged(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
-                loginButton.setImageDrawable(ContextCompat.getDrawable(null, R.drawable.blue_login));
+                loginButton.setBackgroundColor(Color.parseColor("#487FD9"));
             }
         };
         usernameEditText.addTextChangedListener(afterTextChangedListener);
