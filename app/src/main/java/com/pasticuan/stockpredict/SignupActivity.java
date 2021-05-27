@@ -14,5 +14,7 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
         Objects.requireNonNull(getSupportActionBar()).hide();
+
+        //Jangan lupa buat tombol sign up berubah saat salah satu form diisi menjadi warna #487FD9
     }
 }
