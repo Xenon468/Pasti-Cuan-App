@@ -108,7 +108,6 @@
         android:layout_height="63dp"
         android:fontFamily="@font/open_sans_semibold"
         android:includeFontPadding="false"
-        android:lineSpacingExtra="-5dp"
         android:text="Sign up"
         android:textAllCaps="false"
         android:textSize="15.5sp"
